@@ -1,3 +1,4 @@
+// Week 3 Homework
 function countUpwardsByThree() {
     for (num = 0; num <= 30; num+=3) {
         console.log(num);
