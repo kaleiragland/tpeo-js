@@ -12,7 +12,7 @@ var nissan = new Car("Accord", 2010, "white", 30);
 console.log(honda.mpg);
 console.log(ford.mpg);
 console.log(nissan.mpg);
-
+// Q2
 function Vehicle(car) {
     this.car = car;
 }
