@@ -1,39 +1,26 @@
-function GroceryItem(name, price, inventory) {
-    this.name = name;
-    this.price = price;
-    this.inventory = inventory;
+// Week 5 Homework
+function Car(model, year, color, mpg) {
+    this.model = model;
+    this.year = year;
+    this.color = color;
+    this.mpg = mpg;
+}
+var honda = new Car("Civic", 2005, "silver", 25);
+var ford = new Car("Mustang", 2020, "red", 28);
+var nissan = new Car("Accord", 2010, "white", 30);
+
+console.log(honda.mpg);
+console.log(ford.mpg);
+console.log(nissan.mpg);
+
+function Vehicle(car) {
+    this.car = car;
 }
 
-var apple = new GroceryItem("apple", 0.50, 90);
+var hondaVehicle = new Vehicle(honda);
+var fordVehicle = new Vehicle(ford);
+var nissanVehicle = new Vehicle(nissan);
 
-console.log(apple)
-
-var TPEO = {
-    classes: ["Full Stack", "UI/UX", "Javascript"],
-}
-
-function Student(firstName, lastName, university, major, graduationYear) {
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.university = university;
-    this.major = major;
-    this.graduationYear = graduationYear;
-    this.hasGraduated = graduationYear <= 2021;
-}
-
-var kalei = new Student("Kalei", "Ragland", "UT Austin", "Biochemistry", 2023);
-var derek = new Student("Derek", "Wu", "UT Austin", "MIS", 2022);
-
-console.log(kalei.major);
-console.log(derek["major"]);
-console.log(kalei.hasGraduated);
-
-function Course(student, name, location) {
-    this.student = student;
-    this.name = name;
-    this.location = location;
-
-}
-
-var introToJavascript = new Course(kalei, "Intro to Javascript", "GDC 6.302");
-console.log(introToJavascript.student.graduationYear);
+console.log(hondaVehicle.car.mpg);
+console.log(fordVehicle.car.mpg);
+console.log(nissanVehicle.car.mpg);
