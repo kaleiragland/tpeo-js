@@ -17,7 +17,7 @@ for (var i = 0; i < model.length; i++) {
         num += 1;    // makes id number go up by 1 with each iteration
     }
 }
-//console.log(carArray);
+console.log(carArray);
 
 // Q2
 function getCarsBetweenIds(idMin, idMax) {
